@@ -1,5 +1,7 @@
 import streamlit as st
 import os
+port = int(os.getenv("PORT", 8501))  # Use PORT env var or default to 8501
+st.run(server_port=port, server_address="0.0.0.0")
 import time
 import json
 import re
